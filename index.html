@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="home" class="">
+        <h1 id="home-title">Quick Quiz</h1>
+        <a id="play-btn" class="play btn">Play</a>
+    </div>
+
+    <div id="question" class="hide">
+        <div id="question-header">
+            <div id="question-header-progress">
+                <p id="question-header-progress-text">Question 1/3</p>
+                <div id="question-header-progress-bar">
+                    <div id="question-header-progress-bar-filled"></div>
+                </div>
+            </div>
+            <div id="question-header-score">
+                <p>Score</p>
+                <h1 id="question-header-score-value">0</h1>
+            </div>
+        </div>
+        <div id="question-title">
+            <h1 id="question-title-text">This is the Question</h1>
+        </div>
+        <div id="question-body">
+            <div id="question-body-choices">
+                <button id="choice1" class="choice btn">Choice 1</button>
+                <button id="choice2" class="choice btn">Choice 2</button>
+                <button id="choice3" class="choice btn">Choice 3</button>
+                <button id="choice4" class="choice btn">Choice 4</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="end" class="hide">
+        <h1 id="end-title">Quiz Complete</h1>
+        <div id="end-score">
+            <h1 id="end-score-value"></h1>
+        </div>
+        <a id="restart-btn" class="restart btn">Play Again</a>
+        <a id="home-btn" class="home btn">Home</a>
+    </div>
+
+</body>
+    <script src="script.js"></script>
+</html>
