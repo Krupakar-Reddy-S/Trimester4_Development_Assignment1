@@ -58,8 +58,8 @@ const startGame = () => {
 const getNewQuestion = () => {
     if (availableQuestions.length === 0 || answeredQuestions >= questions.length) {
         homeSection.classList.add('hide');
-        endSection.classList.remove('hide');
         questionSection.classList.add('hide');
+        endSection.classList.remove('hide');
         endScoreValue.innerText = `Your Score: ${score * 10}`;
         return;
     }

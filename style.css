@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -7,10 +7,10 @@
 }
 
 :root {
-    --main-color: rgb(85,165,235);
+    --main-color: rgb(85, 165, 235);
 }
 
-h1{
+h1 {
     color: var(--main-color);
     text-align: center;
 }
@@ -21,6 +21,8 @@ h1{
 
 .btn {
     cursor: pointer;
+    background-color: white;
+    border: 1px solid var(--main-color);
 }
 
 .btn:hover {
@@ -29,14 +31,16 @@ h1{
 }
 
 .correct {
-    background-color: #28a745;
+    background-color: #28a745 !important;
+    color: white;
 }
 
 .incorrect {
-    background-color: #dc3545;
+    background-color: #dc3545 !important;
+    color: white;
 }
 
-#home-title{
+#home-title {
     color: var(--main-color);
     text-align: center;
     font-size: 6vh;
@@ -45,8 +49,7 @@ h1{
     font: Arial, sans-serif;
 }
 
-
-#play-btn{
+#play-btn {
     color: var(--main-color);
     background-color: white;
     text-decoration-line: none;
@@ -66,11 +69,7 @@ h1{
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: space-between;
+    text-align: center; 
     padding: 3vh;
 }
 
@@ -80,12 +79,12 @@ h1{
     justify-content: space-between;
     align-items: center;
     justify-content: center;
-    margin-top: 2vh;
-    margin-bottom: 5vh;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
 }
 
 #question-header-score, #question-header-progress {
-    width : 100%;
+    width: 100%;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -94,8 +93,8 @@ h1{
 }
 
 #question-header-progress-bar {
-    height: 5vh;
-    width: 15vw;
+    height: 6vh;
+    width: 20vw;
     border: 0.5vh solid var(--main-color);
     background-color: aliceblue;
 }
@@ -114,6 +113,8 @@ h1{
 
 #question-title-text {
     font-size: 3rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
     margin-bottom: 8vh;
     color: black;
 }
